@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 
     // Declaring Dom Variables
 
@@ -7,14 +7,14 @@ window.onload = function() {
     let resultP = document.querySelector("#resultP");
     let hintImg = document.querySelector("#hintImg");
 
-    let catP = document.querySelector("#catP");
+    let catPSpan = document.querySelector("#catP-Span");
 
     // Categories
 
     catObj = {
-        "Footbal Players": ["ronaldo", "messi", ],
-        "Food": ["kebab", "rice"],
-        "Cities": ["tehran", "ahvaz"],
+        "Footbal Players": ["ronaldo", "messi", "neymar", "xavi", "benzema", "modrich",],
+        "Food": ["kebab", "egg", "bread", "fish", "tomato", "potato"],
+        "Cities": ["tehran", "shiraz", "esfahan", "bushehr", "mashhad", "tabriz"],
     }
 
     let catNames = Object.keys(catObj);
@@ -24,7 +24,7 @@ window.onload = function() {
 
     // catP 
 
-    catP.innerHTML = `The Chosen Category Is "${chosenName}"`
+    catPSpan.innerHTML = `" ${chosenName} "`
     let stillHidden = [],
         boxes = [],
         letters = []
@@ -59,7 +59,7 @@ window.onload = function() {
 
         let lives = 10;
         for (let b of btns) {
-            b.addEventListener("click", function() {
+            b.addEventListener("click", function () {
 
                 // Using Matches Array ***************
 

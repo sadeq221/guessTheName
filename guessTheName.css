@@ -1,4 +1,5 @@
 * {
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -10,12 +11,13 @@ body {
 #container {
     margin: 0 auto;
     color: white;
-    padding: 0 30px;
+    padding: 0 8px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
+    max-width: 600px;
     height: 100vh;
     background-color: rgb(31, 46, 46);
 }
@@ -32,7 +34,7 @@ p {
 
 #btns {
     margin-top: 20px;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -45,10 +47,20 @@ p {
     margin: 5px;
     border: none;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #d2f4ea;
     color: #111;
     font-size: 25px;
     padding: 0 15px;
+}
+
+#catP {
+    font-size: 20px;
+}
+
+#catP-Span {
+    text-decoration: underline;
+    font-size: 25px;
+    color: #ea868f;
 }
 
 .btn:hover {
